@@ -58,11 +58,11 @@ button {
 
 /* Button Colors */
 #start { background: #28a745; color: white; }
-#pause { background: #6c757d; color: white; }
+#pause { background: yellow; color: white; }
 #reset { background: #17a2b8; color: white; }
 #stop { background: #dc3545; color: white; }
 
-.modes button { background: #F172A1; color: white; }
+.modes button { background: #6c757d; color: white; }
 
 button:hover {
     opacity: 0.8;
