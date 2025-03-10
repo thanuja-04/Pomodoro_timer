@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background with Image */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFD9D9;
+}
+.heading{
+    padding-bottom: 30px;
+}
+/* Timer Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);  
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Timer Display */
+#timer-display {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.buttons, .modes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Colors */
+#start { background: #28a745; color: white; }
+#pause { background: #6c757d; color: white; }
+#reset { background: #17a2b8; color: white; }
+#stop { background: #dc3545; color: white; }
+
+.modes button { background: #F172A1; color: white; }
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        
+        max-width: 350px;
+        padding: 30px;
+    }
+    #timer-display {
+        font-size: 40px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    #timer-display {
+        font-size: 35px;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
